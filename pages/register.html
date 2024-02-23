@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="../scss/register/style.css" />
+</head>
+
+<body>
+  <form id="form" action="mailto:alok@itobuz.com" method="post" enctype="text/plain">
+    <h2>Registration Form</h2>
+    <input type="text" placeholder="Your name" class="user-name" autocomplete="on" />
+    <input type="email" placeholder="Your email" class="user-email" autocomplete="on" />
+    <input type="password" placeholder="Create password" class="user-password" />
+    <div class="get-otp-container">
+      <button class="btn btn-get-otp">Get OTP</button>
+      <a href="./login.html">Already have an account?</a>
+    </div>
+    <input type="number" min="100000" max="999999" placeholder="Enter OTP" class="user-otp" />
+    <button class="btn btn-register">Register</button>
+  </form>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="module" src="../scripts/register.mjs"></script>
+</body>
+
+</html>

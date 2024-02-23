@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../scss/common.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-body"><a href="/pages/index.html" class="route-link home-route-link">Home</a>
+            <div class="cart-btn-container">
+                <a href="/pages/cart.html" class="route-link cart-route-link">Cart</a>
+                <span class="cart-item-count"></span>
+            </div>
+            <div class="cart-btn-container">
+                <a href="/pages/wishlist.html" class="route-link cart-route-link">Wishlist</a>
+                <span class="wishlist-item-count"></span>
+            </div>
+            <button class="btn btn-logout">Logout</button>
+        </div>
+    </nav>
+    <div class="card-container  wishlist-card-container"></div>
+
+    <script type="module" src="../scripts/wishlist.mjs"></script>
+</body>
+
+</html>

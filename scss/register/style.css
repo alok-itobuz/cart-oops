@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#01999c 20%, #caffdc 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#form {
+  width: 95%;
+  max-width: 33rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: min(5%, 5rem);
+  background: linear-gradient(#caffdc 20%, #01999c 100%);
+  border-radius: 10px;
+}
+#form h2 {
+  font-size: 2rem;
+}
+#form input {
+  color: #fff;
+}
+#form input::-moz-placeholder {
+  color: #fff;
+}
+#form input::placeholder {
+  color: #fff;
+}
+#form input:focus {
+  outline: none;
+}
+#form input,
+#form button {
+  width: 100%;
+  font-size: min(6vw, 1.1rem);
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: hsl(187, 81%, 35%);
+}
+#form .get-otp-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#form .get-otp-container span {
+  font-size: min(6vw, 1.1rem);
+  color: hsl(0, 94%, 35%);
+}
+#form button:hover {
+  cursor: pointer;
+}
+#form button.btn-get-otp {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  color: hsl(0, 94%, 35%);
+  background: none;
+  align-self: flex-start;
+  padding: 1.4rem 0;
+}
+#form button.btn-get-otp:hover {
+  text-decoration: underline;
+}
+#form button.btn-register {
+  background: #01b5c6;
+  color: #fff;
+}
+#form button.btn-register:hover {
+  box-shadow: 0 0 10px #01b5c6;
+}/*# sourceMappingURL=style.css.map */

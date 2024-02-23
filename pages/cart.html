@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="../scss/common.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-body"><a href="/pages/index.html" class="route-link home-route-link">Home</a>
+      <div class="cart-btn-container">
+        <a href="/pages/cart.html" class="route-link cart-route-link">Cart</a>
+        <span class="cart-item-count"></span>
+      </div>
+      <div class="cart-btn-container">
+        <a href="/pages/wishlist.html" class="route-link cart-route-link">Wishlist</a>
+        <span class="wishlist-item-count"></span>
+      </div>
+      <button class="btn btn-logout">Logout</button>
+    </div>
+  </nav>
+  <div class="card-container cart-card-container"></div>
+
+  <div class="cart-details-container">
+    <div>
+      <span>Total items</span>
+      <span class="total-items">: 0</span>
+    </div>
+    <div>
+      <span>Total Price</span>
+      <span class="total-price">: $0</span>
+    </div>
+    <div class="button-container">
+      <button class="btn-checkout">Checkout</button>
+      <button class="btn-clear-cart">Clear Cart</button>
+    </div>
+  </div>
+  <script type="module" src="../scripts/cart.mjs"></script>
+</body>
+
+</html>
